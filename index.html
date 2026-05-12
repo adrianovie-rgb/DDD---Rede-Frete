@@ -158,95 +158,35 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 var DATA={
   date:"2026-05-11",
   day_label:"Segunda-feira",
-  summary:{picked_up:10966,processed:11540,fm_backlog:0,wrong_node:0},
-  summary_total:{picked_up:10966,processed:40326,spc:28786,pn:11540},
+  summary:{picked_up:3390,processed:3384,fm_backlog:0,wrong_node:0},
+  summary_total:{picked_up:3390,processed:3479,spc:95,pn:3384},
   meta:{recv:98.5,stow:99.5,depart:99.5,ppp:175},
+  ppp_regional:167.04,
   nodes:{
-    "EVE8":{recv_pct:99.95,recv_miss:1,recv_total:1848,stow_pct:99.95,stow_miss:1,stow_total:1847,depart_pct:100,depart_miss:0,depart_total:2330,ppp:186.57,processed:2635},
-    "EIJ8":{recv_pct:99.98,recv_miss:1,recv_total:5603,stow_pct:99.59,stow_miss:23,stow_total:5610,depart_pct:100,depart_miss:0,depart_total:5592,ppp:179.59,processed:6730},
-    "EUM8":{recv_pct:99.96,recv_miss:1,recv_total:2281,stow_pct:99.96,stow_miss:1,stow_total:2281,depart_pct:88.78,depart_miss:256,depart_total:2281,ppp:354.33,processed:2175}
+    "EVE8":{recv_pct:99.84,recv_miss:1,recv_total:644,stow_pct:99.84,stow_miss:1,stow_total:643,depart_pct:100,depart_miss:0,depart_total:811,ppp:186.57,processed:643},
+    "EIJ8":{recv_pct:99.95,recv_miss:1,recv_total:1861,stow_pct:100,stow_miss:0,stow_total:1863,depart_pct:100,depart_miss:0,depart_total:1866,ppp:179.59,processed:1863},
+    "EUM8":{recv_pct:100,recv_miss:0,recv_total:878,stow_pct:100,stow_miss:0,stow_total:878,depart_pct:100,depart_miss:0,depart_total:878,ppp:354.33,processed:878}
   },
-  ese8:{recv_pct:100,recv_miss:0,recv_total:3221,stow_pct:99.96,stow_miss:4,stow_total:9758,depart_pct:100,depart_miss:0,depart_total:7021,ppp:190.97,processed:28786},
-  totals:{recv_pct:99.97,stow_pct:99.74,depart_pct:97.49,ppp:214.12},
+  ese8:{recv_pct:100,recv_miss:0,recv_total:0,stow_pct:100,stow_miss:0,stow_total:95,depart_pct:100,depart_miss:0,depart_total:97,ppp:190.97,processed:95},
+  totals:{recv_pct:99.94,stow_pct:99.97,depart_pct:100,ppp:167.04},
   recv_misses:[
-    {node:"EUM8",tracking:"TBR353949109",seller:"P. PET",motivo:"Recv D+0 n\u00e3o confirmado (07/05)",tratativa:"Verificar coleta"},
-    {node:"EIJ8",tracking:"TBR355839569",seller:"MIXTOU",motivo:"Recv D+0 n\u00e3o confirmado (11/05)",tratativa:"Verificar coleta"},
-    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Recv D+0 n\u00e3o confirmado (11/05)",tratativa:"Verificar coleta"}
+    {node:"EIJ8",tracking:"TBR355839569",seller:"MIXTOU",motivo:"Recv D+0 n\u00e3o confirmado",tratativa:"Verificar coleta"},
+    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Recv D+0 n\u00e3o confirmado",tratativa:"Verificar coleta"}
   ],
   stow_misses:[
-    {node:"EIJ8",tracking:"TBR352300231",seller:"CAMILLO PARTS FILIAL SC",motivo:"Stow D+0 miss (05/05) Lane:EIJ8 ESE8",tratativa:"Cobrar ESE8"},
-    {node:"EIJ8",tracking:"TBR352393211",seller:"EMBALA\u00cd",motivo:"Stow D+0 miss (05/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR352723783",seller:"LEFIPE VARIEDADES",motivo:"Stow D+0 miss (05/05) Lane:EIJ8 ESE8",tratativa:"Cobrar ESE8"},
-    {node:"EIJ8",tracking:"TBR352541577",seller:"AUTO EQUIP SC",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR352951552",seller:"GLOBAL_COMERCIAL",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353060029",seller:"EMBALA\u00cd",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353064916",seller:"EMBALA\u00cd",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353156129",seller:"LULU BABY STORE",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353325874",seller:"MEU C\u00c9U PANTUFAS",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353353363",seller:"EV BEAUTY",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353360626",seller:"T4 DISTRIBUIDORA",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353374847",seller:"UNIK LOJA DIGITAL",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353384825",seller:"EV BEAUTY",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353393417",seller:"SHOP MUNDO DIGITAL",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353407239",seller:"LULU BABY STORE",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353413407",seller:"LULU BABY STORE",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353449387",seller:"EV BEAUTY",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353453921",seller:"CASA CATHARINA",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353454700",seller:"BABY BEE FREE",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353455615",seller:"UNIK LOJA DIGITAL",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353457064",seller:"MIZZ DERMOCOSM\u00c9TICOS",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353515168",seller:"MEU C\u00c9U PANTUFAS",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 STJ9",tratativa:"Verificar STJ9"},
-    {node:"EIJ8",tracking:"TBR353104221",seller:"POLEX WEB",motivo:"Stow D+0 miss (07/05) Lane:EIJ8 ESE8",tratativa:"Cobrar ESE8"},
-    {node:"EUM8",tracking:"TBR352830308",seller:"MSSF COM\u00c9RCIO VAREJISTA",motivo:"Stow D+0 miss (05/05) Lane:EUM8 SCM9",tratativa:"Verificar SCM9"},
-    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Stow D+0 miss (11/05) Lane:EVE8 ECB8",tratativa:"Verificar ECB8"}
+    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Stow D+0 miss Lane:EVE8 ECB8 (D+1 pendente)",tratativa:"Verificar ECB8"}
   ],
-  depart_misses:[
-    {node:"EUM8",tracking:"256 trackings (lote)",seller:"Diversos",motivo:"Regra D+1 \u2014 Depart 08/05 esperado D+1",tratativa:"Sinalizado. N\u00c3O penaliza ranking."}
-  ],
+  depart_misses:[],
   ese8_recv_misses:[],
-  ese8_stow_misses:[
-    {tracking:"AMZB959004344tx",seller:"TCI SHOP",motivo:"Stow D+0 miss (06/05) Lane:EIJ8 ESE8",tratativa:"Verificar ESE8"},
-    {tracking:"TBR353352234",seller:"PRONUTRI",motivo:"Stow D+0 miss (06/05) Lane:ESE8",tratativa:"Verificar ESE8"},
-    {tracking:"TBR353438923",seller:"GAPA OFERTAS",motivo:"Stow D+0 miss (06/05) Lane:ESE8",tratativa:"Verificar ESE8"},
-    {tracking:"TBR353978650",seller:"EROSMANIA SEX SHOP",motivo:"Stow D+0 miss (07/05) Lane:ESE8",tratativa:"Verificar ESE8"}
-  ],
+  ese8_stow_misses:[],
   ese8_depart_misses:[],
   history:{
     dates:["2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-11"],
-    "EVE8":{
-      recv:[100,100,100,100,99.84],
-      stow:[100,100,100,100,99.84],
-      depart:[100,100,100,100,100],
-      ppp:[186.57,186.57,186.57,186.57,186.57],
-      processed:[319,360,275,250,643]
-    },
-    "EIJ8":{
-      recv:[100,100,100,100,99.95],
-      stow:[99.70,97.98,99.89,100,100],
-      depart:[100,100,100,100,100],
-      ppp:[179.59,179.59,179.59,179.59,179.59],
-      processed:[1009,939,906,893,1863]
-    },
-    "EUM8":{
-      recv:[100,100,99.72,100,100],
-      stow:[99.76,100,100,100,100],
-      depart:[100,100,100,0.78,100],
-      ppp:[354.33,354.33,354.33,354.33,354.33],
-      processed:[414,374,357,258,878]
-    },
-    "ESE8":{
-      recv:[100,100,100,100,100],
-      stow:[100,99.83,99.94,100,100],
-      depart:[100,100,100,100,100],
-      ppp:[190.97,190.97,190.97,190.97,190.97],
-      processed:[4831,1767,1611,1454,95]
-    },
-    totals:{
-      recv:[100,100,99.94,100,99.94],
-      stow:[99.77,98.87,99.94,100,99.97],
-      depart:[100,100,100,81.73,100],
-      ppp:[222.40,220.16,221.40,213.01,226.25]
-    }
+    "EVE8":{recv:[100,100,100,100,99.84],stow:[100,100,100,100,99.84],depart:[100,100,100,100,100],ppp:[186.57,186.57,186.57,186.57,186.57],processed:[319,360,275,250,643]},
+    "EIJ8":{recv:[100,100,100,100,99.95],stow:[99.70,97.98,99.89,100,100],depart:[100,100,100,100,100],ppp:[179.59,179.59,179.59,179.59,179.59],processed:[1009,939,906,893,1863]},
+    "EUM8":{recv:[100,100,99.72,100,100],stow:[99.76,100,100,100,100],depart:[100,100,100,0.78,100],ppp:[354.33,354.33,354.33,354.33,354.33],processed:[414,374,357,258,878]},
+    "ESE8":{recv:[100,100,100,100,100],stow:[100,99.83,99.94,100,100],depart:[100,100,100,100,100],ppp:[190.97,190.97,190.97,190.97,190.97],processed:[4831,1767,1611,1454,95]},
+    totals:{recv:[100,100,99.94,100,99.94],stow:[99.77,98.87,99.94,100,99.97],depart:[100,100,100,81.73,100],ppp:[174.53,149.58,176.52,154.20,167.04]}
   }
 };
 
