@@ -156,37 +156,36 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 
 <script>
 var DATA={
-  date:"2026-05-11",
-  day_label:"Segunda-feira",
-  summary:{picked_up:3390,processed:3384,fm_backlog:0,wrong_node:0},
-  summary_total:{picked_up:3390,processed:3479,spc:95,pn:3384},
+  date:"2026-05-12",
+  day_label:"Terça-feira",
+  summary:{picked_up:2296,processed:2296,fm_backlog:0,wrong_node:0},
+  summary_total:{picked_up:2296,processed:10110,spc:7814,pn:2296},
   meta:{recv:98.5,stow:99.5,depart:99.5,ppp:175},
-  ppp_regional:167.04,
+  ppp_regional:208.57,
   nodes:{
-    "EVE8":{recv_pct:99.84,recv_miss:1,recv_total:644,stow_pct:99.84,stow_miss:1,stow_total:643,depart_pct:100,depart_miss:0,depart_total:811,ppp:186.57,processed:643},
-    "EIJ8":{recv_pct:99.95,recv_miss:1,recv_total:1861,stow_pct:100,stow_miss:0,stow_total:1863,depart_pct:100,depart_miss:0,depart_total:1866,ppp:179.59,processed:1863},
-    "EUM8":{recv_pct:100,recv_miss:0,recv_total:878,stow_pct:100,stow_miss:0,stow_total:878,depart_pct:100,depart_miss:0,depart_total:878,ppp:354.33,processed:878}
+    "EVE8":{recv_pct:100,recv_miss:0,recv_total:332,stow_pct:100,stow_miss:0,stow_total:332,depart_pct:100,depart_miss:0,depart_total:332,ppp:166.00,processed:332},
+    "EIJ8":{recv_pct:100,recv_miss:0,recv_total:1406,stow_pct:100,stow_miss:0,stow_total:1406,depart_pct:100,depart_miss:0,depart_total:1406,ppp:198.29,processed:1406},
+    "EUM8":{recv_pct:100,recv_miss:0,recv_total:558,stow_pct:100,stow_miss:0,stow_total:558,depart_pct:100,depart_miss:0,depart_total:558,ppp:291.00,processed:558}
   },
-  ese8:{recv_pct:100,recv_miss:0,recv_total:0,stow_pct:100,stow_miss:0,stow_total:95,depart_pct:100,depart_miss:0,depart_total:97,ppp:190.97,processed:95},
-  totals:{recv_pct:99.94,stow_pct:99.97,depart_pct:100,ppp:167.04},
-  recv_misses:[
-    {node:"EIJ8",tracking:"TBR355839569",seller:"MIXTOU",motivo:"Recv D+0 n\u00e3o confirmado",tratativa:"Verificar coleta"},
-    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Recv D+0 n\u00e3o confirmado",tratativa:"Verificar coleta"}
-  ],
-  stow_misses:[
-    {node:"EVE8",tracking:"TBR356174514",seller:"VINHO CONTIGO",motivo:"Stow D+0 miss Lane:EVE8 ECB8 (D+1 pendente)",tratativa:"Verificar ECB8"}
-  ],
+  ese8:{recv_pct:100,recv_miss:0,recv_total:7814,stow_pct:99.97,stow_miss:2,stow_total:7814,depart_pct:100,depart_miss:0,depart_total:7814,ppp:194.38,processed:7814},
+  totals:{recv_pct:100,stow_pct:99.98,depart_pct:100,ppp:208.57},
+  recv_misses:[],
+  stow_misses:[],
   depart_misses:[],
   ese8_recv_misses:[],
-  ese8_stow_misses:[],
+  ese8_stow_misses:[
+    {node:"ESE8",tracking:"TBR356430542",seller:"WODER",motivo:"Stow não confirmado até 12/05 23:59 (São José/SC)",tratativa:"Verificar lane/origem - se EUM8/EME8/EJO8, regra D+1 até 13/05 23:59"},
+    {node:"ESE8",tracking:"TBR356904846",seller:"GAPA OFERTAS",motivo:"Stow não confirmado até 12/05 23:59 (Biguaçu/SC)",tratativa:"Verificar lane/origem - se EUM8/EME8/EJO8, regra D+1 até 13/05 23:59"}
+  ],
   ese8_depart_misses:[],
+  eum8_depart_note:"⚠️ EUM8 Regra D+1: Departure de 12/05 será validado em 13/05. Até o momento sem miss registrado.",
   history:{
-    dates:["2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-11"],
-    "EVE8":{recv:[100,100,100,100,99.84],stow:[100,100,100,100,99.84],depart:[100,100,100,100,100],ppp:[186.57,186.57,186.57,186.57,186.57],processed:[319,360,275,250,643]},
-    "EIJ8":{recv:[100,100,100,100,99.95],stow:[99.70,97.98,99.89,100,100],depart:[100,100,100,100,100],ppp:[179.59,179.59,179.59,179.59,179.59],processed:[1009,939,906,893,1863]},
-    "EUM8":{recv:[100,100,99.72,100,100],stow:[99.76,100,100,100,100],depart:[100,100,100,0.78,100],ppp:[354.33,354.33,354.33,354.33,354.33],processed:[414,374,357,258,878]},
-    "ESE8":{recv:[100,100,100,100,100],stow:[100,99.83,99.94,100,100],depart:[100,100,100,100,100],ppp:[190.97,190.97,190.97,190.97,190.97],processed:[4831,1767,1611,1454,95]},
-    totals:{recv:[100,100,99.94,100,99.94],stow:[99.77,98.87,99.94,100,99.97],depart:[100,100,100,81.73,100],ppp:[174.53,149.58,176.52,154.20,167.04]}
+    dates:["2026-05-06","2026-05-07","2026-05-08","2026-05-11","2026-05-12"],
+    "EVE8":{recv:[100,100,100,99.88,100],stow:[100,100,100,99.88,100],depart:[100,100,100,100,100],ppp:[258.50,99.67,178.00,198.25,166.00],processed:[521,300,362,800,332]},
+    "EIJ8":{recv:[100,100,100,99.95,100],stow:[97.94,99.89,100,100,100],depart:[100,100,100,100,100],ppp:[230.50,148.83,174.80,169.36,198.29],processed:[922,905,893,1866,1406]},
+    "EUM8":{recv:[100,99.72,100,100,100],stow:[100,100,100,100,100],depart:[100,100,0.78,100,100],ppp:[412.00,372.00,178.00,256.00,291.00],processed:[374,358,258,878,558]},
+    "ESE8":{recv:[100,100,100,100,100],stow:[99.89,99.98,100,100,99.97],depart:[100,100,100,100,100],ppp:[202.14,211.14,170.75,177.47,194.38],processed:[4590,4543,4174,5792,7814]},
+    totals:{recv:[100,99.98,100,99.98,100],stow:[99.63,99.97,100,99.99,99.98],depart:[100,100,95.50,100,100],ppp:[262.45,155.48,176.10,191.74,208.57]}
   }
 };
 
@@ -450,12 +449,13 @@ function openUpdateModal(){
     lines.push('- Tendencia: sempre manter ultimos 5 dias uteis no history');
     lines.push('- Abas Receive/Stow/Departure: listar TODAS trackings miss com node, tracking, seller, motivo e tratativa (PN + ESE8)');
     lines.push('');
-    lines.push('Me devolva o bloco DATA completo para substituir no HTML.');
+    lines.push('IMPORTANTE: Me devolva APENAS o bloco "var DATA={...};" completo para eu substituir no HTML.');
+    lines.push('NAO gere um HTML novo. Mantenha o layout/estrutura atual do index-5.html inalterado.');
+    lines.push('Eu vou apenas copiar o bloco DATA e colar no lugar do antigo.');
     document.getElementById('promptText').value=lines.join(NL);
     document.getElementById('updateModal').classList.add('show');
     document.getElementById('copyOk').style.display='none';
 }
-
 function closeUpdateModal(){document.getElementById('updateModal').classList.remove('show');}
 
 function copyPrompt(){
