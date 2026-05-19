@@ -157,38 +157,53 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;b
 <script>
 
 var DATA={
-  lastUpdate:"2026-05-18 21:10",
+  lastUpdate:"2026-05-19 19:14",
   date:"2026-05-18",
   day_label:"Segunda-feira",
-  summary:{picked_up:3043,processed:7231,fm_backlog:0,wrong_node:1},
-  summary_total:{picked_up:3043,processed:7231,spc:5283,pn:1948},
+  summary:{picked_up:4125,processed:11101,fm_backlog:0,wrong_node:2},
+  summary_total:{picked_up:4125,processed:11101,spc:6825,pn:4276},
   meta:{recv:98.5,stow:99.5,depart:99.5,ppp:175},
-  ppp_regional:203.83,
+  ppp_regional:0,
   nodes:{
-    "EVE8":{recv_pct:100,recv_miss:0,recv_total:375,stow_pct:100,stow_miss:0,stow_total:376,depart_pct:100,depart_miss:0,depart_total:376,ppp:186.50,processed:376},
-    "EIJ8":{recv_pct:100,recv_miss:0,recv_total:1068,stow_pct:100,stow_miss:0,stow_total:1068,depart_pct:100,depart_miss:0,depart_total:1068,ppp:210.40,processed:1068},
-    "EUM8":{recv_pct:100,recv_miss:0,recv_total:504,stow_pct:100,stow_miss:0,stow_total:504,depart_pct:100,depart_miss:0,depart_total:504,ppp:139.75,processed:504}
+    "EVE8":{recv_pct:99.75,recv_miss:2,recv_total:975,stow_pct:100,stow_miss:0,stow_total:975,depart_pct:100,depart_miss:0,depart_total:975,ppp:0,processed:975},
+    "EIJ8":{recv_pct:100,recv_miss:0,recv_total:2488,stow_pct:100,stow_miss:0,stow_total:2488,depart_pct:100,depart_miss:0,depart_total:2488,ppp:0,processed:2488},
+    "EUM8":{recv_pct:100,recv_miss:0,recv_total:813,stow_pct:100,stow_miss:0,stow_total:813,depart_pct:0.24,depart_miss:811,depart_total:813,ppp:0,processed:813}
   },
-  ese8:{recv_pct:99.91,recv_miss:1,recv_total:1091,stow_pct:99.98,stow_miss:1,stow_total:5282,depart_pct:100,depart_miss:0,depart_total:5283,ppp:214.58,processed:5283},
-  totals:{recv_pct:99.97,stow_pct:99.99,depart_pct:100,ppp:203.83},
-  recv_misses:[],
+  ese8:{recv_pct:99.85,recv_miss:3,recv_total:6825,stow_pct:99.75,stow_miss:9,stow_total:6825,depart_pct:100,depart_miss:0,depart_total:6825,ppp:0,processed:6825},
+  totals:{recv_pct:99.94,stow_pct:100,depart_pct:81.03,ppp:0},
+  recv_misses:[
+    {node:"EVE8",tracking:"TBR359961722",seller:"MACRI DISTRIBUIDORA",motivo:"Receive tardio - Ev103 18/05 15:33 sem Ev216 (Cascavel/PR). Scheduled 19/05.",tratativa:"Pacote recebido (Ev201 18:12) mas fora do cutoff de Receive."},
+    {node:"EVE8",tracking:"TBR360384199",seller:"MACRI DISTRIBUIDORA",motivo:"Receive tardio - Ev103 18/05 18:04 sem Ev216 (Cascavel/PR). Scheduled 18/05.",tratativa:"Pacote recebido (Ev201 18:04) mas fora do cutoff de Receive."}
+  ],
   stow_misses:[],
-  depart_misses:[],
+  depart_misses:[
+    {node:"EUM8",tracking:"811 trackings",seller:"Diversos",motivo:"Departure D+1 pendente - 811 pacotes sem Event202 até 18/05 23:59.",tratativa:"\u23f3 D+1 = 19/05. Validação pendente - aguardar refresh do dashboard."}
+  ],
   ese8_recv_misses:[
-    {node:"ESE8",tracking:"TBR352957884",seller:"SKYNET SOLUÇÕES",motivo:"Receive não confirmado até 14/05 23:59 (Palhoça/SC)",tratativa:"Verificar lane/origem - easy ship pudo"}
+    {node:"ESE8",tracking:"TBR358039860",seller:"LLAM STORE",motivo:"Receive sem Ev216 - Ev103 18/05 18:17, Ev201 null (Palhoça/SC). Scheduled 14/05.",tratativa:"Pacote com atraso de 4 dias - pudo ID 10576. Sem confirmação de receive."},
+    {node:"ESE8",tracking:"TBR358771931",seller:"EXPRESS GLOBAL NET",motivo:"Receive tardio - Ev103 18/05 18:10, Ev201 no mesmo horário (Florianópolis/SC).",tratativa:"Pacote recebido no cutoff (18:10). Verificar se Ev216 foi registrado após."},
+    {node:"ESE8",tracking:"TBR359897185",seller:"TUREA",motivo:"Receive tardio - Ev103 18/05 18:51, Ev201 no mesmo horário (Florianópolis/SC).",tratativa:"Pacote recebido após cutoff. Scheduled 20/05 (antecipado)."}
   ],
   ese8_stow_misses:[
-    {node:"ESE8",tracking:"TBR358075993",seller:"LCG ELETRO SC",motivo:"Stow não confirmado até 14/05 23:59 (Palhoça/SC)",tratativa:"Verificar lane/origem - seller flex pickup"}
+    {node:"ESE8",tracking:"AMZB962717226tx",seller:"VIDA FLORIPA",motivo:"Stow não completado - Ev216 18/05 17:28 mas Ev201 null (São José/SC).",tratativa:"Pacote com scan Ev216 mas sem finalização de stow."},
+    {node:"ESE8",tracking:"TBR358027766",seller:"DEUTILI",motivo:"Stow não completado - Ev216 18/05 18:19 mas Ev201 null (Palhoça/SC).",tratativa:"Scheduled 14/05, Ev103 tardio (18/05 18:17). Atraso de 4 dias."},
+    {node:"ESE8",tracking:"TBR359313888",seller:"SASSO SHOP BR",motivo:"Stow não completado - Ev216 18/05 17:21 mas Ev201 null (São José/SC).",tratativa:"Pudo ID 10951. Pacote scanneado mas não stowed."},
+    {node:"ESE8",tracking:"TBR359400328",seller:"VIDA FLORIPA",motivo:"Stow não completado - Ev216 18/05 17:19 mas Ev201 null (São José/SC).",tratativa:"Pudo ID 11293. Mesmo seller com 2 miss."},
+    {node:"ESE8",tracking:"TBR359799118",seller:"AVOKADO NUTRIÇÃO SAUDAVEL",motivo:"Stow não completado - Ev216 18/05 14:50 mas Ev201 null (São José/SC).",tratativa:"Pickup. Pacote scanneado 13:58, stow scan 14:50."},
+    {node:"ESE8",tracking:"TBR359926253",seller:"AMIGOS DISTRIBUIDORA",motivo:"Stow não completado - Ev216 18/05 15:45 mas Ev201 null (São José/SC).",tratativa:"Pickup. Verificar se Ev201 registrado D+1."},
+    {node:"ESE8",tracking:"TBR360280006",seller:"ESPAÇO PRIME BEBIDAS",motivo:"Stow não completado - Ev216 18/05 14:50 mas Ev201 null (São José/SC).",tratativa:"Pickup. 2 pacotes do mesmo seller."},
+    {node:"ESE8",tracking:"TBR360280074",seller:"ESPAÇO PRIME BEBIDAS",motivo:"Stow não completado - Ev216 18/05 14:50 mas Ev201 null (São José/SC).",tratativa:"Pickup. Mesmo seller, mesmo horário."},
+    {node:"ESE8",tracking:"TBR360353428",seller:"LCG ELETRO SC",motivo:"Stow não completado - Ev216 18/05 18:18 mas Ev201 null (Palhoça/SC).",tratativa:"Pickup. Último scan do dia - possível D+1 para stow."}
   ],
   ese8_depart_misses:[],
-  eum8_depart_note:"✅ EUM8 Regra D+1: Departure de 14/05 validado em 15/05. 0 miss - 100% confirmado.",
+  eum8_depart_note:"\u23f3 EUM8 Regra D+1: 811 trackings de 18/05 aguardando validação em 19/05. Ev202 pendente para todos.",
   history:{
-    dates:["2026-05-08","2026-05-11","2026-05-12","2026-05-13","2026-05-14","2026-05-15"],
-    "EVE8":{recv:[100,99.84,100,92.30,100,100],stow:[100,99.84,100,100,100,99.34],depart:[100,100,100,100,100,100],ppp:[178.00,198.25,166.00,162.00,186.50,210.00],processed:[362,800,332,488,376,420]},
-    "EIJ8":{recv:[100,99.94,100,99.91,100,99.71],stow:[100,100,100,99.91,100,100],depart:[100,100,100,100,100,99.90],ppp:[174.80,169.36,198.29,182.50,210.40,255.25],processed:[893,1866,1406,1113,1068,1029]},
-    "EUM8":{recv:[100,100,100,99.82,100,100],stow:[100,100,100,100,100,100],depart:[0.77,100,100,100,100,0.77],ppp:[178.00,256.00,291.00,184.33,139.75,125.50],processed:[258,878,558,563,504,518]},
-    "ESE8":{recv:[100,100,100,100,99.91,100],stow:[100,100,99.97,99.94,99.98,99.98],depart:[100,100,100,100,100,100],ppp:[170.75,177.47,194.38,220.70,214.58,182.41],processed:[4174,5792,7814,5249,5283,5052]},
-    totals:{recv:[100,99.98,100,97.65,99.97,99.89],stow:[100,99.99,99.98,99.98,99.99,99.96],depart:[95.50,100,100,100,100,92.66],ppp:[176.10,191.74,208.57,195.36,203.83,177.22]}
+    dates:["2026-05-12","2026-05-13","2026-05-14","2026-05-15","2026-05-18"],
+    "EVE8":{recv:[100,92.30,100,100,99.75],stow:[100,100,100,99.34,100],depart:[100,100,100,100,100],ppp:[166.00,162.00,186.50,210.00,0],processed:[332,488,376,420,975]},
+    "EIJ8":{recv:[100,99.91,100,99.71,100],stow:[100,99.91,100,100,100],depart:[100,100,100,99.90,100],ppp:[198.29,182.50,210.40,255.25,0],processed:[1406,1113,1068,1029,2488]},
+    "EUM8":{recv:[100,99.82,100,100,100],stow:[100,100,100,100,100],depart:[100,100,100,100,0.24],ppp:[291.00,184.33,139.75,125.50,0],processed:[558,563,504,518,813]},
+    "ESE8":{recv:[100,100,99.91,100,99.85],stow:[99.97,99.94,99.98,99.98,99.75],depart:[100,100,100,100,100],ppp:[194.38,220.70,214.58,182.41,0],processed:[7814,5249,5283,5052,6825]},
+    totals:{recv:[100,97.65,99.97,99.89,99.89],stow:[99.98,99.98,99.99,99.96,99.85],depart:[100,100,100,100,92.69],ppp:[208.57,195.36,203.83,177.22,0]}
   }
 };
 
